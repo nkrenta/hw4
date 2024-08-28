@@ -4,8 +4,7 @@ public class Hw4 {
     public static int scanner(String text) {
         Scanner input = new Scanner(System.in);
         System.out.println(text);
-        int digit = input.nextInt();
-        return digit;
+        return input.nextInt();
     }
 
     public static void main(String[] args) {
@@ -115,18 +114,19 @@ public class Hw4 {
 
         //Task 7
         System.out.println("Task 7");
-        a = "1";
-        b = "2";
-        String c = "3";
-
+        a = "First number:";
+        b = "Second number:";
+        String c = "Third number:";
+        //Init Scanners
         int one = scanner(a);
         int two = scanner(b);
         int three = scanner(c);
-
+        //Init Bool
         boolean oneMoreTwo = one > two;
         boolean oneMoreThree = one > three;
         boolean twoMoreOne = two > one;
         boolean twoMoreThree = two > three;
+        System.out.println();
 
         if (oneMoreTwo && oneMoreThree){
             System.out.println("One is the biggest!");
